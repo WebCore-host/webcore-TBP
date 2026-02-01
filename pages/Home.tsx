@@ -9,7 +9,7 @@ const Home: React.FC = () => {
       <section className="relative h-screen min-h-[600px] flex items-center justify-center pt-20">
         <div className="absolute inset-0">
           <img 
-            src="./photo/plumbing.png" 
+            src="./photo/plumbing.jpg" 
             alt="Texas Built Plumbing Team" 
             className="w-full h-full object-cover brightness-[0.35]"
           />
