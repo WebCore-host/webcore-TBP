@@ -1,27 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PlumbingBg from '../components/PlumbingBg';  // Use ../components/ since you're in pages/
 
 const Home: React.FC = () => {
-  // Directly referencing the asset in the photo folder
-  const bgImagePath = "photo/plumbing.jpg";
 
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
+      {/* Hero Section */}
       <section className="relative h-screen min-h-[600px] flex items-center justify-center pt-20">
         <div className="absolute inset-0 bg-navy">
-          <img 
-            src={bgImagePath} 
-            alt="Texas Built Plumbing Background" 
-            className="w-full h-full object-cover brightness-[0.4]"
-            onError={(e) => {
-                // Fallback attempt if relative path fails in certain environments
-                const target = e.target as HTMLImageElement;
-                if (target.src.indexOf('/photo/') === -1) {
-                    target.src = '/photo/plumbing.jpg';
-                }
-            }}
-          />
+          <PlumbingBg className="w-full h-full object-cover brightness-[0.4]" />
           <div className="absolute inset-0 bg-gradient-to-b from-navy/60 via-transparent to-navy/90"></div>
         </div>
         
