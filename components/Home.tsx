@@ -1,12 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import PlumbingBg from '../components/PlumbingBg';  // Use ../components/ since you're in pages/
+import PlumbingBg from './PlumbingBP'; // Fixed path: Home and PlumbingBP are in the same folder
 
 const Home: React.FC = () => {
 
   return (
     <div className="overflow-hidden">
-      {/* Hero Section */}
       {/* Hero Section */}
       <section className="relative h-screen min-h-[600px] flex items-center justify-center pt-20">
         <div className="absolute inset-0 bg-navy">
